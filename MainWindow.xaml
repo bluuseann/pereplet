@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pereplet"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+                Title="Переплёт" Height="600" Width="1000" Background="#D2C0FF" WindowStartupLocation="CenterScreen" Icon="\image\logo.png" >
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.6*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Image Source="\image\logo.png" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Margin="10,10,0,11" Width="125">
+            <Image.Effect>
+                <DropShadowEffect ShadowDepth="0" BlurRadius="20" Color="#FF3D1C89" Opacity="0.65"/>
+            </Image.Effect>
+        </Image>
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Text="электронный книжный магазин"   HorizontalAlignment="Left" TextWrapping="Wrap" Width="533" FontSize="33.4" VerticalAlignment="Top" Margin="250,97,0,0" Style="{StaticResource text}"/>
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Text="«Переплёт»"   HorizontalAlignment="Left" TextWrapping="Wrap" Width="533" FontSize="90"  VerticalAlignment="Top" Margin="250,-9,0,0" Grid.RowSpan="2" Style="{StaticResource text}"/>
+        <TextBlock Text="логин:" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="33.4" Margin="215,0,0,0" Style="{StaticResource text}"/>
+        <TextBlock Text="пароль:" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="33.4" Margin="215,0,0,0" Style="{StaticResource text}"/>
+        <TextBox x:Name="log" Grid.Column="1" Grid.Row="1" Width="400" Height="50" Foreground="#FF3D1C89" SelectionBrush="#FF020C13" BorderBrush="#FF3D1C89"  Background="#F0E7FF" HorizontalAlignment="Left" Margin="10,0,0,0">
+            <TextBox.Effect>
+                <DropShadowEffect ShadowDepth="0" BlurRadius="10" Color="#FF3D1C89" Opacity="0.65"/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="pass" Grid.Column="1" Grid.Row="2" Width="400" Height="50" Foreground="#FF3D1C89" SelectionBrush="#FF020C13" BorderBrush="#FF3D1C89"  Background="#F0E7FF" HorizontalAlignment="Left" Margin="10,0,0,0">
+            <TextBox.Effect>
+                <DropShadowEffect ShadowDepth="0" BlurRadius="10" Color="#FF3D1C89" Opacity="0.65"/>
+            </TextBox.Effect>
+        </TextBox>
+        <Button Name="auto" Content="войти" Foreground="#D2C0FF"  Grid.ColumnSpan="2" Grid.Row="3" Template="{StaticResource овальная кнопка}" Style="{StaticResource Knopka}" Height="75" Width="570" Background="#FF3D1C89" Click="auto_Click"/>
     </Grid>
 </Window>
+

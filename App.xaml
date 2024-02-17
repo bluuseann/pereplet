@@ -4,6 +4,33 @@
              xmlns:local="clr-namespace:pereplet"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <Style TargetType="TextBlock" x:Key="text">
+                <Setter Property="Foreground" Value="#3D1C89"/>
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+            <Style TargetType="Button" x:Key="Knopka">
+                <Setter Property="Foreground" Value="#D2C0FF"/>
+                <Setter Property="FontSize" Value="33.5"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+            <ControlTemplate x:Key="овальная кнопка" TargetType="Button">
+
+                <Grid>
+                    <Border x:Name="bt" CornerRadius="25" Background="{ TemplateBinding Background }"  />
+                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                </Grid>
+
+                <ControlTemplate.Triggers>
+                    <Trigger Property="IsMouseOver" Value="true">
+                        <Setter Property="Background" TargetName="bt" Value="#6437DB "/>
+
+
+                    </Trigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
