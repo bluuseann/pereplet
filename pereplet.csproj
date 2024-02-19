@@ -8,7 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="image\1984.jpg" />
+    <None Remove="image\basket.png" />
+    <None Remove="image\club.jpg" />
+    <None Remove="image\god.jpg" />
+    <None Remove="image\kniggas.png" />
     <None Remove="image\logo.png" />
+    <None Remove="image\romeo.jpg" />
+    <None Remove="image\world.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,9 +28,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="image\1984.jpg" />
+    <Resource Include="image\basket.png" />
+    <Resource Include="image\club.jpg" />
+    <Resource Include="image\god.jpg" />
+    <Resource Include="image\kniggas.png" />
     <Resource Include="image\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="image\romeo.jpg" />
+    <Resource Include="image\world.jpg" />
   </ItemGroup>
 
 </Project>

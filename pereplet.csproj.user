@@ -7,7 +7,27 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Basket.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="katalog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Reg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Basket.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="katalog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Reg.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

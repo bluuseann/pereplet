@@ -61,3 +61,9 @@ D:\Panika\pereplet\obj\Debug\net7.0-windows\refint\pereplet.dll
 D:\Panika\pereplet\obj\Debug\net7.0-windows\pereplet.pdb
 D:\Panika\pereplet\obj\Debug\net7.0-windows\pereplet.genruntimeconfig.cache
 D:\Panika\pereplet\obj\Debug\net7.0-windows\ref\pereplet.dll
+D:\Panika\pereplet\obj\Debug\net7.0-windows\Basket.g.cs
+D:\Panika\pereplet\obj\Debug\net7.0-windows\katalog.g.cs
+D:\Panika\pereplet\obj\Debug\net7.0-windows\Reg.g.cs
+D:\Panika\pereplet\obj\Debug\net7.0-windows\Basket.baml
+D:\Panika\pereplet\obj\Debug\net7.0-windows\katalog.baml
+D:\Panika\pereplet\obj\Debug\net7.0-windows\Reg.baml

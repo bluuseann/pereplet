@@ -27,17 +27,9 @@ namespace pereplet
 
         private void auto_Click(object sender, RoutedEventArgs e)
         {
-            var login = log.Text;
-            var password = pass.Text;
-            var context = new AppDbContext();
-            var user_exists =context.Users.FirstOrDefault(x => x.Login == login);
-            if (user_exists != null) {
-                MessageBox.Show("Такой пользователь уже существует");
-                return;
-                    }
-            var user = new User { Login = login, Password = password };
-            context.Users.Add(user);
-            context.SaveChanges();
+            katalog katalog = new katalog();
+            katalog.Show();
+            this.Close();
 
         }
     }
